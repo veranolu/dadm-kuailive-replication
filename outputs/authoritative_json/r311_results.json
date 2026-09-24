@@ -1,0 +1,127 @@
+{
+ "full_period": {
+  "n_users": 20576,
+  "n_emotional": 5344,
+  "n_instrumental": 15232,
+  "target_emotional": 5249,
+  "target_instrumental": 15327,
+  "n_gift_users": 20576,
+  "single_gift_share": 0.4702080093312597
+ },
+ "w1_baseline": {
+  "n_classifiable": 10949,
+  "n_panel": 20576,
+  "coverage": 0.5321248055987559,
+  "n_emotional": 1998,
+  "single_gift_share": 0.5981368161475934,
+  "ge2_gift_share": 0.4018631838524066
+ },
+ "agreement": {
+  "n_common": 10949,
+  "ARI": 0.3805726785639356,
+  "kappa": 0.5483871627351977,
+  "raw_agree": 0.8176089140560782,
+  "crosstab_row_normalized": {
+   "emotional": {
+    "emotional": 0.5001,
+    "instrumental": 0.0125
+   },
+   "instrumental": {
+    "emotional": 0.4999,
+    "instrumental": 0.9875
+   }
+  }
+ },
+ "moderation_w1": {
+  "M1_DEP_comment": {
+   "n_obs": 5306,
+   "gamma_main": {
+    "mean": -0.015,
+    "sd": 0.001,
+    "hdi_lo": -0.017,
+    "hdi_hi": -0.014,
+    "rhat": 1.0,
+    "ess": 2082.0,
+    "bf01": 0.0
+   },
+   "gamma_orient": {
+    "mean": 0.001,
+    "sd": 0.001,
+    "hdi_lo": -0.001,
+    "hdi_hi": 0.002,
+    "rhat": 1.0,
+    "ess": 2600.0,
+    "bf01": 342.1139934539221
+   },
+   "gamma_inter": {
+    "mean": 0.001,
+    "sd": 0.001,
+    "hdi_lo": -0.0,
+    "hdi_hi": 0.003,
+    "rhat": 1.0,
+    "ess": 2365.0,
+    "bf01": 201.3820274260334
+   }
+  },
+  "M2_DEP_click": {
+   "n_obs": 5306,
+   "gamma_main": {
+    "mean": 0.003,
+    "sd": 0.001,
+    "hdi_lo": 0.002,
+    "hdi_hi": 0.005,
+    "rhat": 1.0,
+    "ess": 2356.0,
+    "bf01": 0.001436442887590641
+   },
+   "gamma_orient": {
+    "mean": 0.001,
+    "sd": 0.001,
+    "hdi_lo": -0.001,
+    "hdi_hi": 0.002,
+    "rhat": 1.0,
+    "ess": 3147.0,
+    "bf01": 450.123205907615
+   },
+   "gamma_inter": {
+    "mean": 0.0,
+    "sd": 0.001,
+    "hdi_lo": -0.002,
+    "hdi_hi": 0.002,
+    "rhat": 1.0,
+    "ess": 2081.0,
+    "bf01": 583.1828759116432
+   }
+  },
+  "M3_comment_comment": {
+   "n_obs": 5306,
+   "gamma_main": {
+    "mean": -0.199,
+    "sd": 0.006,
+    "hdi_lo": -0.21,
+    "hdi_hi": -0.188,
+    "rhat": 1.0,
+    "ess": 2669.0,
+    "bf01": 0.0
+   },
+   "gamma_orient": {
+    "mean": -0.006,
+    "sd": 0.006,
+    "hdi_lo": -0.017,
+    "hdi_hi": 0.005,
+    "rhat": 1.0,
+    "ess": 2389.0,
+    "bf01": 47.99838465351637
+   },
+   "gamma_inter": {
+    "mean": 0.001,
+    "sd": 0.006,
+    "hdi_lo": -0.01,
+    "hdi_hi": 0.012,
+    "rhat": 1.0,
+    "ess": 3018.0,
+    "bf01": 78.8054313672818
+   }
+  }
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "task": "s11_cre_clarify",
+ "paper": "P4",
+ "desc": "S11 hurdle 口径裁决(beta版)/CRE ln_psi 更正落盘/FD 样本差解释",
+ "seed": null,
+ "timestamp": "2026-09-23T10:52:22",
+ "data": {
+  "/Coze/Drive/扣子/所有对话/主对话/论文4_数据清洗/kuailive_panel_balanced.csv": "527ed10cc2428588646d22df7fab4c5b"
+ },
+ "Q1_extensive_logit": {
+  "beta": 0.6729500081807257,
+  "se": 0.008208385136310666,
+  "p": 0.0,
+  "n": 61728
+ },
+ "Q1_intensive_OLS": {
+  "beta": -0.04940262399091522,
+  "se": 0.0003184966984326647,
+  "p": 0.0,
+  "n": 43183
+ },
+ "Q1_intensive_BETA": {
+  "beta": -0.6264677238670057,
+  "se": 0.015589536765246647,
+  "p": 0.0,
+  "n": 43183
+ },
+ "Q1_intensive_entityFE": {
+  "beta": -0.041254563127151894,
+  "se": 0.0006747879202106171,
+  "p": 0.0,
+  "n": 43183
+ },
+ "Q2_CRE_lnpsi_official": {
+  "within": 0.16701604466647754,
+  "within_se": 0.02624600851001283,
+  "between": -0.5426215306643632,
+  "between_se": 0.02981654365343284,
+  "n": 61717,
+  "V4_1": 0.1682,
+  "verdict": "EXACT (within=+0.1670 vs +0.1682, dev 0.7%)"
+ },
+ "Q2_pending4_conflict_note": "pending4_results.json 的 CRE_fractional_logit.coef_psi=-0.000669 是 psi 水平值误版；正式口径为 ln_psi：within=+0.1670（本 JSON 为准，台账 +0.1670/+0.1682 一致）",
+ "Q3_FD_sample": {
+  "W1W3_common": 21105,
+  "d_ln_watch_NaN": 0,
+  "d_DEP_NaN": 10,
+  "est_sample_d_DEP": 21095,
+  "explain": "N=21,105 是 W1&W3 共同用户数；d_DEP 回归因 10 个用户某波完全无免费互动（denom=0→DEP 无法定义→NaN）实际估样本=21,095；与 V4.1 披露的'全零互动 user-wave'同因，属数据合法特征非计算错误。【更正：初版误归因 d_ln_watch NaN，经数据检查 d_ln_watch NaN=0，真凶为 d_DEP NaN=10】"
+ },
+ "correction_log": "Q3 初版 explain 归因错误（d_ln_watch→d_DEP），2026-09-23 数据溯源后更正"
+}

@@ -1,0 +1,84 @@
+{
+ "group_counts": {
+  "treated": 6690,
+  "control": 1828,
+  "excluded": 12058
+ },
+ "V4_1_anchors": {
+  "treated": 6690,
+  "control": 1828,
+  "excluded": 12058,
+  "N": 25554
+ },
+ "TWFE_entity_FE_only": {
+  "DEP": {
+   "coef": -0.010081290833248536,
+   "se": 0.0013172176339189866,
+   "pval": 2.0650148258027912e-14,
+   "n_obs": 25554,
+   "V4_1": -0.0102,
+   "deviation_pct": 1.1638153603084793,
+   "hit": true
+  },
+  "ln_gift_amount": {
+   "coef": -0.5937560245390342,
+   "se": 0.020472121024728247,
+   "pval": 0.0,
+   "n_obs": 25554,
+   "V4_1": -0.6,
+   "deviation_pct": 1.0406625768276299,
+   "hit": true
+  },
+  "deep_count": {
+   "coef": -2.4912556053811645,
+   "se": 0.07976614844491034,
+   "pval": 0.0,
+   "n_obs": 25554,
+   "V4_1": -2.476,
+   "deviation_pct": 0.6161391510971143,
+   "hit": true
+  }
+ },
+ "PT_delta_OLS": {
+  "DEP": {
+   "coef": -0.004669182699456737,
+   "se": 0.002691218384955601,
+   "pval": 0.08278232831439386,
+   "n_obs": 8518,
+   "V4_1_coef": -0.0048,
+   "V4_1_p": 0.14,
+   "deviation_pct": 2.72536042798463,
+   "conclusion_match": true
+  },
+  "ln_gift_amount": {
+   "coef": -0.37641212234845584,
+   "se": 0.056134737442668135,
+   "pval": 2.1348655017348638e-11,
+   "n_obs": 8518,
+   "V4_1_coef": -0.376,
+   "V4_1_p": 0.001,
+   "deviation_pct": 0.10960700756804109,
+   "conclusion_match": true
+  },
+  "deep_count": {
+   "coef": -1.9046987076959276,
+   "se": 0.2241028751044378,
+   "pval": 2.2321707985823525e-17,
+   "n_obs": 8518,
+   "V4_1_coef": -1.905,
+   "V4_1_p": 0.001,
+   "deviation_pct": 0.01581586898017779,
+   "conclusion_match": true
+  }
+ },
+ "provenance": {
+  "script": "did_archaeology_repro.py v1.0 (Coze 2026-09-23)",
+  "data_path": "/Coze/Drive/扣子/所有对话/主对话/论文4_数据清洗/kuailive_panel_balanced.csv",
+  "data_md5": "527ed10cc2428588646d22df7fab4c5b",
+  "spec_TWFE": "entity FE only (no time FE); PanelOLS cluster(user)",
+  "spec_PT": "OLS: (Y_W2 - Y_W1) ~ treated; plain OLS SE",
+  "seed": null,
+  "engine": "linearmodels PanelOLS / statsmodels OLS",
+  "cert_doc": "P4_DID_PROVENANCE_复原认定书.md"
+ }
+}

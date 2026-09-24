@@ -1,0 +1,76 @@
+{
+ "group_counts": {
+  "treated": 6690,
+  "control": 1828,
+  "excluded": 12058
+ },
+ "twfe_DEP_full": {
+  "coef": -0.00879912469917063,
+  "se": 0.0027202506009048983,
+  "pval": 0.0012201389530528406,
+  "n_obs": 25547
+ },
+ "event_DEP_full": {
+  "delta1": 0.1234617921133851,
+  "se1": 0.0016836943991383809,
+  "p1": 0.0,
+  "delta2": 0.11698992584485664,
+  "se2": 0.0016568756660336323,
+  "p2": 0.0,
+  "pt_held_p05": false
+ },
+ "twfe_idi": {
+  "coef": -0.0149451191846765,
+  "se": 0.0035069357834867335,
+  "pval": 2.0406937435879513e-05,
+  "n_obs": 25554
+ },
+ "event_idi": {
+  "delta1": 0.17087043611482383,
+  "se1": 0.0021755399406175008,
+  "p1": 0.0,
+  "delta2": 0.16049380285769485,
+  "se2": 0.00213917809515525,
+  "p2": 0.0,
+  "pt_held_p05": false
+ },
+ "twfe_ln_gift_amount": {
+  "coef": -0.5682613271047314,
+  "se": 0.05583190764188174,
+  "pval": 0.0,
+  "n_obs": 25554
+ },
+ "event_ln_gift_amount": {
+  "delta1": 2.0989649136366304,
+  "se1": 0.03327269409309878,
+  "p1": 0.0,
+  "delta2": 1.7189096477061265,
+  "se2": 0.03318032234178502,
+  "p2": 0.0,
+  "pt_held_p05": false
+ },
+ "twfe_deep_count": {
+  "coef": -2.45487704958248,
+  "se": 0.16448795380490214,
+  "pval": 0.0,
+  "n_obs": 25554
+ },
+ "event_deep_count": {
+  "delta1": 7.5414992797735225,
+  "se1": 0.09983577284559576,
+  "p1": 0.0,
+  "delta2": 6.038971584039017,
+  "se2": 0.09836997280738544,
+  "p2": 0.0,
+  "pt_held_p05": false
+ },
+ "provenance": {
+  "script": "did_dep_repro.py (Coze 2026-09-23, v1)",
+  "data_path": "/Coze/Drive/扣子/所有对话/主对话/论文4_数据清洗/kuailive_panel_balanced.csv",
+  "data_md5": "527ed10cc2428588646d22df7fab4c5b",
+  "spec": "PSI W1->W3 pct_change; treated<-30%, control ±10%; post=W3; PanelOLS entity+time FE, cluster(user)",
+  "seed": null,
+  "note": "frequentist, 无随机抽样",
+  "DEP_construct": "comment/(click+like+comment), denom>0 else NaN"
+ }
+}

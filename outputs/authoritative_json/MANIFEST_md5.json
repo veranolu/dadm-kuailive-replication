@@ -1,0 +1,9 @@
+{
+ "R3-7_unconstrained/out_dual4b/r37_dual4b_results.json": "3381b65f605525b0e1bed6451d78dbdd",
+ "R3-7_unconstrained/out/r37_results.json": "111f940835d3778c3f1f40772e6bf3f9",
+ "R3-11_baseline_cluster/out/r311_results.json": "e3eeff95a763f6665653a7f6a6d3cffe",
+ "R3-8_prior_sensitivity/out/r38_prior_results.json": "c1c79afdbcaa302542f319e11642027f",
+ "PENDING4_重跑/out/pending4_results.json": "10b86f95da80ca3e05b8eb10d13faab2",
+ "DID_考古复原/out/did_archaeology_results.json": "6b569b14b1665eb52c6dba4338566f69",
+ "P4_MASTER_NUMERICAL_PROVENANCE.xlsx": "b8b3b495b68a6fb19d37a1ba63b957cd"
+}

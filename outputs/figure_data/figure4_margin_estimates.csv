@@ -1,0 +1,3 @@
+component,estimand,beta,ci_halfwidth_graphical,source
+Hurdle Stage 1 (logit),Extensive margin: participation incidence,+1.564,"±0.12 (graphical, from V3.9 Figure 4)",V3.9 P123/P125
+Hurdle Stage 2 (fractional),Intensive margin: conditional comment share | participants,-0.492,"±0.06 (graphical, from V3.9 Figure 4)",V3.9 P123/P125

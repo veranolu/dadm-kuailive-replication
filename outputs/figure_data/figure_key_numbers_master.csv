@@ -1,0 +1,18 @@
+quantity,value,source_trace
+Sample: raw users,"23,772",V3.9 P59/Table 1; Figure 2
+Sample: raw streamers,"452,621",V3.9 P59/Table 1; Figure 2
+Sample: retained three-wave users,"20,576",V3.9 Table 1; Figure 2
+Sample: excluded,"3,196",V3.9 Table 1; Figure 2
+Panel: user-wave observations,"61,728",V3.9 Abstract/Table 1; Figure 2
+Panel: lagged pairs,"41,152",V3.9 Table 1; Figure 2
+H2 watch: gamma,"−0.0004, 95% HDI [−0.0018, +0.0010], BF01 = 543.30",V3.9 Abstract/P108/Table 5; Figure 3
+H2 click: gamma,"−0.0002, 95% HDI [−0.0016, +0.0011], BF01 = 683.44",V3.9 P108/Table 5; Figure 3
+Extensive margin,β = +1.564,V3.9 P123/P125; Figure 4
+Intensive margin,β = −0.492,V3.9 P123/P125; Figure 4
+Entropy association,r = −0.202,V3.9 P160; Figures 2/7
+Between-person (BP) association,r = 0.324–0.371; CRE β = +0.168,V3.9 P121; Appendix A Table A2
+Concurrent WP (FE),β = 0.158 / 0.234,V3.9 P119; Appendix A Table A2
+Full-sample H2 sensitivity,BF01 = 433.26,V3.9 Table S22; Appendix B Table B2
+Click-free DEP sensitivity,BF01 = 181.06,V3.9 Table S27; Appendix B Table B2
+NB RI-CLPM count sensitivity,"β = −0.00139, 95% HDI [−0.0028, +0.0001]",SM Note 4; Appendix B Table B2
+Computational audit,"PyMC 5.28.4; NUTS; tune=500; draws=1000×2 chains; seed=42; Normal(0,0.5); R-hat≈1.00; ESS≥400",Appendix B Table B2; pipeline script line 45
